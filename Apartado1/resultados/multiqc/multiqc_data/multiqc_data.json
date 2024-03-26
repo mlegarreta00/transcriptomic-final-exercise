@@ -1,0 +1,200 @@
+{
+    "report_data_sources": {
+        "HTSeq Count": {
+            "all_sections": {
+                "SRR479054_chr21.htseq": "/home/vant/Documentos/Master/Transcriptomica/ejercicio_final/Apartado1/resultados/htseq/SRR479054_chr21.htseq",
+                "SRR479052_chr21.htseq": "/home/vant/Documentos/Master/Transcriptomica/ejercicio_final/Apartado1/resultados/htseq/SRR479052_chr21.htseq"
+            }
+        }
+    },
+    "report_general_stats_data": [
+        {
+            "SRR479054_chr21.htseq": {
+                "no_feature": 3036,
+                "ambiguous": 46,
+                "too_low_aQual": 4746,
+                "not_aligned": 170,
+                "alignment_not_unique": 0,
+                "assigned": 1748,
+                "total_count": 9746,
+                "percent_assigned": 17.935563308023806
+            },
+            "SRR479052_chr21.htseq": {
+                "no_feature": 4538,
+                "ambiguous": 69,
+                "too_low_aQual": 7506,
+                "not_aligned": 277,
+                "alignment_not_unique": 0,
+                "assigned": 2950,
+                "total_count": 15340,
+                "percent_assigned": 19.230769230769234
+            }
+        }
+    ],
+    "report_general_stats_headers": [
+        {
+            "percent_assigned": {
+                "title": "% Assigned",
+                "description": "% Assigned reads",
+                "max": 100,
+                "min": 0,
+                "suffix": "%",
+                "scale": "RdYlGn",
+                "namespace": "HTSeq Count",
+                "rid": "mqc-generalstats-htseq_count-percent_assigned",
+                "format": "{:,.1f}",
+                "colour": "55,126,184",
+                "hidden": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "shared_key": null,
+                "modify": null,
+                "placement": 1000.0,
+                "dmax": 100.0,
+                "dmin": 0.0
+            },
+            "assigned": {
+                "title": "M Assigned",
+                "description": "Assigned Reads (millions)",
+                "min": 0,
+                "scale": "PuBu",
+                "modify": 1e-06,
+                "shared_key": "read_count",
+                "namespace": "HTSeq Count",
+                "rid": "mqc-generalstats-htseq_count-assigned",
+                "format": "{:,.1f}",
+                "colour": "55,126,184",
+                "hidden": null,
+                "max": null,
+                "ceiling": null,
+                "floor": null,
+                "minRange": null,
+                "placement": 1000.0,
+                "dmax": 0.00295,
+                "dmin": 0.0
+            }
+        }
+    ],
+    "report_multiqc_command": "/home/vant/miniforge3/envs/transcriptomica/bin/multiqc -o Apartado1/resultados/multiqc/ Apartado1/resultados/htseq",
+    "report_plot_data": {
+        "htseq_assignment_plot": {
+            "plot_type": "bar_graph",
+            "samples": [
+                [
+                    "SRR479052_chr21.htseq",
+                    "SRR479054_chr21.htseq"
+                ]
+            ],
+            "datasets": [
+                [
+                    {
+                        "name": "Assigned",
+                        "data": [
+                            2950.0,
+                            1748.0
+                        ],
+                        "color": "#7cb5ec"
+                    },
+                    {
+                        "name": "Ambiguous",
+                        "data": [
+                            69.0,
+                            46.0
+                        ],
+                        "color": "#434348"
+                    },
+                    {
+                        "name": "Alignment Not Unique",
+                        "data": [
+                            0.0,
+                            0.0
+                        ],
+                        "color": "#90ed7d"
+                    },
+                    {
+                        "name": "No Feature",
+                        "data": [
+                            4538.0,
+                            3036.0
+                        ],
+                        "color": "#f7a35c"
+                    },
+                    {
+                        "name": "Too Low aQual",
+                        "data": [
+                            7506.0,
+                            4746.0
+                        ],
+                        "color": "#8085e9"
+                    },
+                    {
+                        "name": "Not Aligned",
+                        "data": [
+                            277.0,
+                            170.0
+                        ],
+                        "color": "#f15c80"
+                    }
+                ]
+            ],
+            "config": {
+                "id": "htseq_assignment_plot",
+                "title": "HTSeq: Count Assignments",
+                "ylab": "# Reads",
+                "hide_zero_cats": false,
+                "cpswitch_counts_label": "Number of Reads"
+            }
+        }
+    },
+    "report_saved_raw_data": {
+        "multiqc_htseq": {
+            "SRR479054_chr21.htseq": {
+                "no_feature": 3036,
+                "ambiguous": 46,
+                "too_low_aQual": 4746,
+                "not_aligned": 170,
+                "alignment_not_unique": 0,
+                "assigned": 1748,
+                "total_count": 9746,
+                "percent_assigned": 17.935563308023806
+            },
+            "SRR479052_chr21.htseq": {
+                "no_feature": 4538,
+                "ambiguous": 69,
+                "too_low_aQual": 7506,
+                "not_aligned": 277,
+                "alignment_not_unique": 0,
+                "assigned": 2950,
+                "total_count": 15340,
+                "percent_assigned": 19.230769230769234
+            }
+        },
+        "multiqc_general_stats": {
+            "SRR479054_chr21.htseq": {
+                "HTSeq Count_mqc-generalstats-htseq_count-percent_assigned": 17.935563308023806,
+                "HTSeq Count_mqc-generalstats-htseq_count-assigned": 1748
+            },
+            "SRR479052_chr21.htseq": {
+                "HTSeq Count_mqc-generalstats-htseq_count-percent_assigned": 19.230769230769234,
+                "HTSeq Count_mqc-generalstats-htseq_count-assigned": 2950
+            }
+        }
+    },
+    "config_analysis_dir_abs": [
+        "/home/vant/Documentos/Master/Transcriptomica/ejercicio_final/Apartado1/resultados/htseq"
+    ],
+    "config_analysis_dir": [
+        "Apartado1/resultados/htseq"
+    ],
+    "config_creation_date": "2024-03-25, 12:06 CET",
+    "config_git_hash": null,
+    "config_intro_text": null,
+    "config_report_comment": null,
+    "config_report_header_info": null,
+    "config_script_path": "/home/vant/miniforge3/envs/transcriptomica/lib/python3.10/site-packages/multiqc/utils",
+    "config_short_version": "1.19",
+    "config_subtitle": null,
+    "config_title": null,
+    "config_version": "1.19"
+}

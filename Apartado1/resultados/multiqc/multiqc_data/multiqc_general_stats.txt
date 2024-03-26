@@ -1,0 +1,3 @@
+Sample	HTSeq Count_mqc-generalstats-htseq_count-percent_assigned	HTSeq Count_mqc-generalstats-htseq_count-assigned
+SRR479052_chr21.htseq	19.230769230769234	2950
+SRR479054_chr21.htseq	17.935563308023806	1748
